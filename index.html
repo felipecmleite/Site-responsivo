@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AluraEmotions</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header class="cabeçalho">
+            <div class="container">
+                <input type="checkbox" id="menu" class="container__botao" />
+                <label for="menu">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+                </label>
+                    <ul class="lista-menu">
+                        <li class="lista-menu__titulo">Categorias</li>
+                        <li class="lista-menu__item">
+                          <a href="#" class="lista-menu__link">Emoções positivas</a>
+                        </li>
+                        <li class="lista-menu__item">
+                          <a href="#" class="lista-menu__link">Emoções neutras</a>
+                        </li>
+                        <li class="lista-menu__item">
+                          <a href="#" class="lista-menu__link">Emoções negativas</a>
+                        </li>
+                        <li class="lista-menu__item">
+                          <a href="#" class="lista-menu__link">Emoções complexas</a>
+                        </li>
+                      </ul>
+                      
+                <img src="img/Logo.svg" alt="Logo da AluraEmotions" class="container__imagem" />
+            </div>
+            <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+            <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
+            <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+        </div>
+        </header>
+        <section class="banner">
+          <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+          <p class="banner__texto">Reflita sobre sua vida</p>
+          <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima emoção?">
+        </section>
+        <section class="carrossel">
+          <h2 class="carrossel__titulo">Novos lançamentos</h2>
+          <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="img/Felicidade.jpg" alt="Pessoa sorrindo em frente a uma parede com listras horizontais de cores diferentes"></div>
+    <div class="swiper-slide"><img src="img/Gratidão.jpg" alt="Uma pessoa mais jovem abraça uma mais velha em uma praia, pode-se ver o rosto da mais jovem"></div>
+    <div class="swiper-slide"><img src="img/Surpresa.jpg"alt="Uma pessoa tapa os olhos de alguém com as mãos como quem se prepara para fazer uma surpresa"></div>
+    <div class="swiper-slide"><img src="img/Melancolia.jpg" alt="Uma pessa olha para o lado de fora através de uma janela com ar nostalgico"></div>
+    <div class="swiper-slide"><img src="img/Amor.jpg" alt="Um casal passeia em uma praia no pôr do sol"></div>
+    <div class="swiper-slide"><img src="img/Saudade.jpg" alt="Uma pessoa deitada em uma cama olha com lágrimas nos olhos para um objeto que provavelmente pertencia a alguém querido"></div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+
+<div class="card">
+  <!--primeira linha-->
+  <div class="card__descrição">
+    <!--primeira coluna-->
+    <div class="descrição">
+    <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+    <h2 class="descrição__titulo-livro">Emotions Coach</h2>
+    <p class="descrição__texto">Experimente nossa IA que monitora suas emoções e seus metabólitos e propõe um atendimento personalizado</p>
+  </div>
+  <!--segunda coluna-->
+  <img src="img/Emotions.jpg" class="descrição__imagem">
+</div>
+
+<!--2° linha-->
+<div class="card__botões">
+  <!--1° Coluna-->
+  <ul class="botões">
+      <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar"></li>
+      <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+  </ul>
+  <!--2° coluna-->
+  <a href="#" class="botão__âncora">Saiba mais</a>
+</div>
+</div>
+</section>
+
+<section class="tópicos">
+  <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+  <ul class="tópicos__lista">
+  <li class="tópicos__item">
+    <a href="#" class="tópicos__link">Mindfulness</a>
+  </li>
+  <li class="tópicos__item">
+    <a href="#" class="tópicos__link">Paixão e seus embates</a>
+  </li>
+  <li class="tópicos__item">
+    <a href="#" class="tópicos__link">Empatia</a>
+  </li>
+  <li class="tópicos__item">
+    <a href="#" class="tópicos__link">Saúde mental</a>
+  </li>
+  <li class="tópicos__item">
+    <a href="#" class="tópicos__link">Serenidade e stress</a>
+  </li>
+  <li class="tópicos__item">
+    <a href="#" class="tópicos__link">Emoções complexas</a>
+  </li>
+</ul>
+</section>
+<section class="contato">
+  <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+  <p class="contato__texto">Atualizações de e-motions, novos produtos, promoções e outros.</p>
+  <input type="email" placeholder="Cadastre seu e-mail" class="contato__email"/>
+</section>
+
+<hr />
+
+<footer class="rodapé">
+  <h2 class="rodapé__titulo">Grupo Alura</h2>
+</footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+          const swiper = new Swiper(".swiper", {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+              el: ".swiper-pagination",
+              type: "bullets",
+            },
+          });
+        </script>
+    </body>
+</html>
