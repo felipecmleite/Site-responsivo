@@ -1,3 +1,3 @@
 # Site-responsivo
 
-Projeto da unidade: Página web: desenvolvendo um site de assinatura de conteúdo
+Projeto da unidade: Página web: utilizando a responsividade em aplicações com HTML e CSS - Parte 1
