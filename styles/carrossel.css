@@ -19,7 +19,7 @@
 }
 
 .swiper-pagination {
-    position: initial;
+    position: initial; /*linha não tem no código alura*/
     margin: 0.5em 0;
   }
 
@@ -97,27 +97,65 @@
     display: block;
     border-radius: 10px;
     margin-right: 0.5em;
+  }
+  
+
+
+
+@media screen and (min-width: 1024px) {
+  .carrossel__titulo {
+    font-size: 26px;
+  }
+  .swiper-pagination {
+    margin: 2em 0 3em 0;
+  }
+  .swiper {
+    width: 60%;
+    margin-top: 40px; /*eu add*/
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+    top: 60%;
+  }
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-  .card {
-      width: 99%; /* Faz o card ocupar 90% da largura da tela em dispositivos móveis */
-      margin: 1em auto; /* Centraliza o card */
+@media screen and (min-width: 1728px) {
+  .carrossel__container {
+    display: flex;
+    width: 90%;
+    margin: 0 20vw 3em 20vw;
+    align-items: center;
   }
 
-  .descrição__imagem {
-      width: 100%; /* A imagem continua ocupando 100% da largura do card */
-      max-height: 150px; /* Reduz a altura da imagem em telas menores */
-      object-fit: contain; /* Garante que a imagem se ajuste sem cortar */
-      margin-right: 0.5em;
+  .swiper-pagination {
+    position: initial; /*linha não tem no código alura*/
+    margin: 1em 0;
+  }
+
+  .swiper {
+    width: 50%;
+  }
+
+  .descrição__titulo {
+    font-size: 28px;
   }
 
   .descrição__texto {
-    font-size: 1rem; /* Aumenta o tamanho da fonte para desktops */
-    margin-left: 0.5em;
+    font-size: 16px;
+  }
+
+  .descrição {
+    margin-right: 2em;
+  }
+
+  .card {
+    width: 60%;
+    margin-left: 3em;
+    margin-right: 13%;
+  }
+
+  .swiper-pagination {
+    margin: 1em 0;
+  }
 }
-}
-
-
-
